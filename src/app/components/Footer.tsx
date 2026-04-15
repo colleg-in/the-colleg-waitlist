@@ -69,26 +69,43 @@ export default function Footer() {
 
   return (
     <div>
-      {shouldDisplay && <Modal onClose={() => handleClose()} shouldClose={!showModal} />}
+      {shouldDisplay && (
+        <Modal onClose={() => handleClose()} shouldClose={!showModal} />
+      )}
       <div className="bg-secondary pb-[54px] px-[28px] pt-[40px] rounded-[32px] mx-2 z-[1] relative max-[500px]:px-[16px] footer">
-        <div className={`
+        <div
+          className={`
         flex gap-[176px]
         max-[760px]:flex-col max-[760px]:gap-[32px]
-      `}>
-          <div className={`
+      `}
+        >
+          <div
+            className={`
           max-w-[868px] w-full pr-[58px]
           max-[760px]:pr-[0px]
-        `}>
+        `}
+          >
             <div>
-              <h4 className="h4 text-white">Stay updated with the latest updates</h4>
+              <h4 className="h4 text-white">
+                Stay updated with the latest updates
+              </h4>
             </div>
-            <div className={`
+            <div
+              className={`
             flex gap-[10px] w-full pt-[31px]
             max-[760px]:flex-col unzoom-f
-          `}>
-              <FooterCTA className="!h-[52px] input-cta" setHigherValue={setEmail} />
+          `}
+            >
+              <FooterCTA
+                className="!h-[52px] input-cta"
+                setHigherValue={setEmail}
+              />
               <div>
-                <ButtonPrimary value="Subscribe" imageDivStyle="w-[23px] h-[23px]" onClick={() => handleJoin()} />
+                <ButtonPrimary
+                  value="Subscribe"
+                  imageDivStyle="w-[23px] h-[23px]"
+                  onClick={() => handleJoin()}
+                />
               </div>
             </div>
           </div>
@@ -121,17 +138,23 @@ export default function Footer() {
           <div className="pt-[128px]">
             <Image src={Logo} alt="the college logo" width={1456} />
           </div>
-          <div className={`
+          <div
+            className={`
           flex gap-[5px] items-center pt-[35px] justify-end pr-[55px]
           max-[760px]:pr-[0px] max-[760px]:justify-center
           max-[380px]:flex-col max-[350px]:gap-[2px]
-        `}>
+        `}
+          >
             <div>
-              <p className={`
+              <p
+                className={`
                 text-white body2 text-center
                 max-[760px]:text-left
                 max-[500px]:text-[12px]
-              `}>© 2026 The College. All rights reserved.</p>
+              `}
+              >
+                AZB Labs Private Limited © 2026 | All rights reserved.
+              </p>
             </div>
             {/* <div>
               <span className={`
@@ -150,7 +173,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
     </div>
-  )
+  );
 }
