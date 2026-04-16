@@ -131,6 +131,16 @@ export default function Footer() {
                   <FooterLink value="Privacy" />
                 </Link>
               </div>
+              <div className="pt-2">
+                <Link href={"/terms"}>
+                  <FooterLink value="Terms" />
+                </Link>
+              </div>
+              <div className="pt-2">
+                <Link href={"/refunds"}>
+                  <FooterLink value="Refunds" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

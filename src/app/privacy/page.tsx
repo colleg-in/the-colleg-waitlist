@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 
 import Acc from "@/app/assets/acc.png";
 import Smilex from "@/app/assets/smilex.png";
@@ -32,6 +35,26 @@ function Section({ children }: { children: any }) {
 export default function Privacy() {
   return (
     <div className="bg-[#F5F5F5] mt-[70px]">
+      {/* Related Policy Links */}
+      <div className="max-w-[1750px] mx-auto px-[140px] max-[1040px]:px-[32px] max-[501px]:px-[16px] pt-[40px]">
+        <div className="flex gap-[12px] flex-wrap">
+          <Link
+            href="/terms"
+            className="inline-flex items-center gap-[8px] px-[20px] py-[10px] rounded-full border border-secondary-600 bg-white text-secondary body4 font-[500] tracking-[0] hover:bg-primary hover:border-primary hover:text-white transition-all duration-200 text-[13px] leading-[16px]"
+          >
+            <span className="w-[6px] h-[6px] rounded-full bg-primary inline-block flex-shrink-0"></span>
+            Terms &amp; Conditions
+          </Link>
+          <Link
+            href="/refunds"
+            className="inline-flex items-center gap-[8px] px-[20px] py-[10px] rounded-full border border-secondary-600 bg-white text-secondary body4 font-[500] tracking-[0] hover:bg-primary hover:border-primary hover:text-white transition-all duration-200 text-[13px] leading-[16px]"
+          >
+            <span className="w-[6px] h-[6px] rounded-full bg-mint-500 inline-block flex-shrink-0"></span>
+            Refunds &amp; Cancellations
+          </Link>
+        </div>
+      </div>
+
       <div className="pb-[240px] max-w-[1750px] mx-auto">
         <div>
           <div className="absolute pt-[60px] pl-[120px] max-[855px]:pl-[60px] max-[501px]:pl-[16px]">
