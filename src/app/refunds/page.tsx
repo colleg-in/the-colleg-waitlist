@@ -175,7 +175,7 @@ export default function Refunds() {
                     textTransform: "uppercase",
                   }}
                 >
-                  Last updated — 2026
+                  Last updated — 16·04·2026
                 </span>
               </div>
             </div>
